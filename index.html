@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warmtepompen Nederland | Efficiënt en Duurzaam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: rgb(0,141,169);      /* hoofd-achtergrond: #008DA9 */
+      --ink: #4b5563;            /* grijs voor lopende tekst */
+      --heading: #c1121f;        /* rood voor koppen */
+      --card: #ffffff;
+      --accent: #ffe066;         /* subtiele CTA-kleur */
+      --radius: 16px;
+      --shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--ink); line-height:1.6}
+    a{color:inherit}
+    .container{max-width:1200px; margin:0 auto; padding:0 20px}
+
+    /* Header / Hero */
+    .hero{position:relative; display:grid; align-items:center; min-height:68vh;}
+    .hero-inner{display:grid; grid-template-columns:1.1fr 1fr; gap:28px; padding:48px 0}
+    @media (max-width: 980px){.hero-inner{grid-template-columns:1fr;}}
+    .hero-copy{color:#f8fafc}
+    .eyebrow{letter-spacing:.08em; text-transform:uppercase; font-weight:600; opacity:.9}
+    h1{color:var(--heading); font-size:clamp(28px,4.2vw,54px); line-height:1.08; margin:.2em 0 .35em}
+    .lead{font-size:clamp(16px,2.1vw,19px); color:#f1f5f9; max-width:56ch}
+    .cta{display:flex; gap:12px; margin-top:18px; flex-wrap:wrap}
+    .btn{display:inline-block; padding:14px 20px; border-radius:12px; font-weight:800; text-decoration:none}
+    .btn-primary{background:var(--accent); color:#111827}
+    .btn-ghost{outline:2px solid rgba(255,255,255,.75); color:#fff}
+    .hero-media{background:rgba(255,255,255,.15); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+    .hero-media img{width:100%; height:100%; object-fit:cover; display:block}
+
+    /* Section wrapper */
+    section{padding:52px 0}
+
+    /* Cards */
+    .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px}
+    .card{background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
+    .card h3{color:var(--heading); margin:8px 0 6px}
+
+    /* Producten */
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px}
+    .prod{background:var(--card); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+    .prod img{width:100%; height:200px; object-fit:cover}
+    .prod .body{padding:16px}
+
+    /* Boiler banner */
+    .boiler{display:grid; grid-template-columns:1fr 1.2fr; gap:22px; align-items:center}
+    @media (max-width:980px){.boiler{grid-template-columns:1fr}}
+    .panel{background:var(--card); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
+
+    /* Contact */
+    .contact form{display:grid; gap:12px}
+    input, textarea{padding:12px 14px; border-radius:12px; border:1px solid #e2e8f0; font:inherit}
+    button{padding:12px 16px; border-radius:12px; border:0; background:var(--heading); color:white; font-weight:800; cursor:pointer}
+    button:hover{filter:brightness(1.05)}
+
+    /* Footer */
+    footer{color:#e2e8f0; padding:22px 0; text-align:center}
+
+    /* Headings default */
+    h2{color:var(--heading); font-size:clamp(22px,3vw,32px); margin:0 0 14px}
+    .muted{opacity:.9}
+  </style>
+  <script>
+    function imgFallback(img){img.onerror=null;img.src='https://via.placeholder.com/1200x800?text=Afbeelding+niet+beschikbaar';}
+  </script>
+</head>
+<body>
+  <!-- HERO met grote warmtepomp-afbeelding -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">Warmtepompen Nederland</div>
+        <h1>Grote besparing, groot comfort – met een moderne warmtepomp</h1>
+        <p class="lead">Stap vandaag over op een efficiënte warmtepomp. Wij leveren en installeren A‑merk systemen met snelle plaatsing en volledige ondersteuning bij subsidie.</p>
+        <div class="cta">
+          <a href="#contact" class="btn btn-primary">Gratis offerte</a>
+          <a href="#modellen" class="btn btn-ghost">Bekijk modellen</a>
+        </div>
+      </div>
+      <figure class="hero-media" aria-label="Grote afbeelding van een warmtepomp">
+        <img src="https://images.unsplash.com/photo-1615485737651-6f8770d78b36?q=80&w=1600&auto=format&fit=crop" alt="Warmtepomp buitenunit voorgevel" onerror="imgFallback(this)"/>
+      </figure>
+    </div>
+  </header>
+
+  <!-- VOORDELEN -->
+  <section>
+    <div class="container">
+      <h2>Waarom kiezen voor onze warmtepompen?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>ISDE‑subsidie</h3>
+          <p class="muted">Wij helpen bij de aanvraag, zodat u maximaal profiteert (tot ca. €2.500 afhankelijk van type).</p>
+        </div>
+        <div class="card">
+          <h3>Hoge besparing</h3>
+          <p class="muted">Lagere energiekosten en minder CO₂‑uitstoot met hybride of all‑electric systemen.</p>
+        </div>
+        <div class="card">
+          <h3>Gecertificeerde montage</h3>
+          <p class="muted">Vakkundige installatie, inregelen en onderhoud door ervaren monteurs.</p>
+        </div>
+        <div class="card">
+          <h3>Stille werking</h3>
+          <p class="muted">A‑merken met lage geluidsniveaus en slimme besturing voor optimaal comfort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELLEN -->
+  <section id="modellen">
+    <div class="container">
+      <h2>Onze modellen</h2>
+      <div class="grid">
+        <article class="prod">
+          <img src="https://images.unsplash.com/photo-1615485737651-6f8770d78b36?q=80&w=1200&auto=format&fit=crop" alt="Lucht/water warmtepomp buitenunit" onerror="imgFallback(this)"/>
+          <div class="body">
+            <h3 style="color:var(--heading)">Lucht/water</h3>
+            <p class="muted">Ideaal voor renovatie. Hoog rendement, compacte buitenunit en stille werking.</p>
+          </div>
+        </article>
+        <article class="prod">
+          <img src="https://images.unsplash.com/photo-1603808033192-6b9b7b6c9e2b?q=80&w=1200&auto=format&fit=crop" alt="Hybride warmtepomp in techniekruimte" onerror="imgFallback(this)"/>
+          <div class="body">
+            <h3 style="color:var(--heading)">Hybride</h3>
+            <p class="muted">Warmtepomp in combinatie met cv‑ketel voor maximale besparing met zekerheid in piekuren.</p>
+          </div>
+        </article>
+        <article class="prod">
+          <img src="https://images.unsplash.com/photo-1539594784984-6a9b7d2d8f5d?q=80&w=1200&auto=format&fit=crop" alt="All‑electric binnenunit" onerror="imgFallback(this)"/>
+          <div class="body">
+            <h3 style="color:var(--heading)">All‑electric</h3>
+            <p class="muted">Volledig gasloos. Perfect voor goed geïsoleerde woningen en nieuwbouw.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOOMKETEL AFBEELDING + TEKST -->
+  <section>
+    <div class="container boiler">
+      <figure class="panel" aria-label="Afbeelding stoomketel">
+        <img src="https://images.unsplash.com/photo-1599134842279-cc4e5117c3f5?q=80&w=1400&auto=format&fit=crop" alt="Industrieel ketelhuis / stoomketel" style="width:100%; height:100%; object-fit:cover" onerror="imgFallback(this)"/>
+      </figure>
+      <div class="panel">
+        <h2>Integratie met bestaande systemen</h2>
+        <p class="muted">We stemmen de warmtepomp af op uw bestaande installatie (bijv. stoomketel of cv‑ketel). Zo blijft uw bedrijfsvoering of wooncomfort gegarandeerd tijdens de overstap en benut u het maximale rendement.</p>
+        <ul class="muted" style="margin:0 0 0 18px">
+          <li>Advies en engineering op maat</li>
+          <li>Gefaseerde inbedrijfstelling</li>
+          <li>Onderhoudsplan & monitoring</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container panel">
+      <h2>Vraag een vrijblijvende offerte aan</h2>
+      <form onsubmit="event.preventDefault(); this.reset(); alert('Bedankt! We nemen snel contact met u op.');">
+        <input name="naam" placeholder="Uw naam" required>
+        <input name="email" type="email" placeholder="Uw e‑mail" required>
+        <input name="postcode" placeholder="Postcode + huisnr." required>
+        <textarea name="bericht" rows="5" placeholder="Beschrijf kort uw woning/bedrijf en wensen"></textarea>
+        <button type="submit">Offerte aanvragen</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2025 Warmtepompen Nederland · info@warmtepompen.nl · 06‑12345678</div>
+  </footer>
+</body>
+</html>
